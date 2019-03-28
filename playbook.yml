@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - kick_and_run:
+        name: foo
+      register: result
+
+    - debug:
+        var: result
